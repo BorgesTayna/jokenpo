@@ -9,7 +9,9 @@ class _JogoState extends State<Jogo> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("JokenPo"),
+        centerTitle: true,
+        title: Text("JokenPo Game",
+        ),
       ),
       body: Container(
         width: double.infinity,
