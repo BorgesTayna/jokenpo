@@ -20,6 +20,7 @@ class _JogoState extends State<Jogo> {
             Text("Escolha do APP",
                 textAlign: TextAlign.center
             )
+            Image.file(file)
           ],
         ),
       )

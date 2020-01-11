@@ -4,4 +4,4 @@ Selecione entre pedra papel e tesoura e seja o melhor jogador de JokenPo da face
 
 Enjoy the game
 
-BorgesTayna,
+BorgesTayna
