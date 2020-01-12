@@ -32,11 +32,9 @@ class _JogoState extends State<Jogo> {
           this._imageApp = AssetImage("images/tesoura.png");
         });
         break;
-
     }
-
     //validação ganhador
-    //usuario ganhador
+    //Usuario Ganhador
     if(
         (opcaoUsuario == "pedra" && escolhaApp == "tesoura") ||
         (opcaoUsuario == "papel" && escolhaApp == "pedra") ||
@@ -45,16 +43,16 @@ class _JogoState extends State<Jogo> {
       setState(() {
         this._mensagem = "Parabens você ganhou! xD";
       });
-    //app ganhador
+    //App ganhador
     }else if(
         (opcaoUsuario == "pedra" && escolhaApp == "papel") ||
         (opcaoUsuario == "papel" && escolhaApp == "tesoura") ||
         (opcaoUsuario == "tesoura" && escolhaApp == "pedra")
-
     ) {
       setState(() {
         this._mensagem = "Você perdeu :(";
       });
+      //Empate
     }else{
       setState(() {
         this._mensagem = "Empatamos! xD";
@@ -67,7 +65,7 @@ class _JogoState extends State<Jogo> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("JokenPo Game",
+        title: Text("JokenPo Game by: Tayna Borges",
         ),
       ),
       body: Container(
@@ -113,18 +111,11 @@ class _JogoState extends State<Jogo> {
                   onTap: () => _escolhaUsuario("tesoura"),
                   child: Image.asset("images/tesoura.png", height: 110),
                 )
-                /*
-                Image.asset("images/pedra.png", height: 110),
-                Image.asset("images/papel.png", height: 110),
-                Image.asset("images/tesoura.png", height: 110)
-                */
               ],
             )
          ],
         ),
       )
-
-
     );
   }
 }
